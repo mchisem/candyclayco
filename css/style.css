@@ -85,7 +85,7 @@ nav a {
 } */
 
 @keyframes slide {
-    25%  {background-image: url(../photos/black&whiteEarrings/half.JPG);}
+    25%  {background-image: url(../photos/black&whiteEarrings/spotted.JPG);}
     50%  {background-image: url(../photos/pinkEarrings/IMG_1132.JPG);}
     75%  {background-image: url(../photos/yellowEarrings/lemons.JPG);}
     100%  {background-image: url(../photos/black&whiteEarrings/IMG_1135.JPG);}
