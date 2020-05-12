@@ -5,12 +5,10 @@
 }
 
 body {
-    background-color: rgb(225, 209, 249);
-    background-color: #ffd1f9;
-    /* background-color: #f6acc8; */
-    /* background-color: #ffd1f8; */
     background-color: white;
     padding: 50px;
+    /* background-image: url(../photos/black&whiteEarrings/half.JPG); */
+    /* background-size: cover; */
     border-left: 40px solid #ffd1f9;
     border-right: 40px solid #ffd1f9;
     border-top: 40px solid #ffd1f9;
@@ -35,10 +33,15 @@ nav a {
     right: 0;
     height: 70vh;
     top: 15%;
+    margin: 0;
     text-align: center;
-    z-index: -1;
     border-left: 40px solid #ffd1f9;
     border-right: 40px solid #ffd1f9;
+    /* background-image: url(../photos/black&whiteEarrings/half.JPG);
+    background-size: cover;
+    animation: slide 10s infinite;
+    z-index: -1; */
+    /* overflow: hidden; */
 }
 
 #s1 h3 {
@@ -52,20 +55,40 @@ nav a {
     z-index: 999;
     min-width: 100%;
     max-height: 100%;
-    top: 44.5%;
+    top: 45%;
     font-size: 70px;
 }
 
-#s1 img {
+#slider {
+    position: absolute;
+    height: 60vh;
+    margin: 60px;
+    top: -1%;
+    left: 0;
+    right: 0;
+    /* padding: 50px; */
+    background-image: url(../photos/greenEarrings/IMG_1134.JPG);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    z-index: -1;
+    animation: slide 20s 4s infinite;
+}
+
+/* #s1 img {
     min-width: 100%;
     max-height: 100%;
     padding: 50px;
     object-fit: cover;
     z-index: -1;
-}
+    animation: slide 10s infinite;
+} */
 
-.hide {
-    display: none;
+@keyframes slide {
+    25%  {background-image: url(../photos/black&whiteEarrings/half.JPG);}
+    50%  {background-image: url(../photos/pinkEarrings/IMG_1132.JPG);}
+    75%  {background-image: url(../photos/yellowEarrings/IMG_1139.JPG);}
+    100%  {background-image: url(../photos/black&whiteEarrings/spotted.JPG);}
 }
 
 #email {
